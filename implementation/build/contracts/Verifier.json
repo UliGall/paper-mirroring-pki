@@ -1,0 +1,1283 @@
+{
+  "contractName": "Verifier",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "endorsementStore",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "rootStore",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "endorsementStore",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "rootStore",
+          "type": "uint256"
+        }
+      ],
+      "name": "setEndorsementDatabase",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"endorsementStore\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"rootStore\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"endorsementStore\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"rootStore\",\"type\":\"uint256\"}],\"name\":\"setEndorsementDatabase\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Reference implementation of a verifier for a TLS certificate-based authentication framework\",\"methods\":{\"setEndorsementDatabase(address,uint256)\":{\"details\":\"Set the EndorsementDatabase contract and index of trusted root store\",\"params\":{\"endorsementStore\":\"Address of the EndorsementDatabase contract\",\"rootStore\":\"Index of the root store\"}}},\"title\":\"Verifier\"},\"userdoc\":{\"methods\":{\"setEndorsementDatabase(address,uint256)\":{\"notice\":\"Set the EndorsementDatabase contract and index of trusted root store\"}},\"notice\":\"Reference implementation of a verifier for a TLS certificate-based authentication framework\"}},\"settings\":{\"compilationTarget\":{\"/home/friederike/tls-certificates-for-etherum/implementation/contracts/Verifier.sol\":\"Verifier\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/friederike/tls-certificates-for-etherum/implementation/contracts/ASN1DERNode.sol\":{\"keccak256\":\"0xf4ceb79c816466efced169659eafb449af8ed61c3e4d127c0bf60823aab3fb1f\",\"urls\":[\"bzz-raw://3014e35bfd0d06c600c99c2d31839425f13e36ff60677949a53bcbb9fba3e359\",\"dweb:/ipfs/QmaPCj9pFxzUBaHyBWLJfbMFmEXgqHnt3NGKHVEUqDK9Jp\"]},\"/home/friederike/tls-certificates-for-etherum/implementation/contracts/BufferX.sol\":{\"keccak256\":\"0x3f7a4a4825b407069831bf5d7dc0baf38eb9b5312a6388d51ffaba8d843faf85\",\"urls\":[\"bzz-raw://84b803370f05d783e4d32c9264a20a8c6b18adb6f88ca7bb3759538ed775f034\",\"dweb:/ipfs/QmcLSzsbUqVehbSbLFyf9kCqSyrGSfw4SnWxhucETMV1nk\"]},\"/home/friederike/tls-certificates-for-etherum/implementation/contracts/BytesUtils.sol\":{\"keccak256\":\"0xc94f41f72af9279419747fd6626d550360ac423a90d59613a8b0378fe8046aa6\",\"urls\":[\"bzz-raw://211304044c479d460bb719f560805c77666f7bb1a3241e9bfe404f1ad5b9ce97\",\"dweb:/ipfs/QmTAQgQ6FHLYAcx9C1rgFkEeJvdAAvcVg7uPsL7ziNQHKt\"]},\"/home/friederike/tls-certificates-for-etherum/implementation/contracts/CertStore.sol\":{\"keccak256\":\"0x125159cee1d3711ee25d91acf8633d59a2333d3fc51b45739772972fcddea74a\",\"urls\":[\"bzz-raw://f6fc76b9d16ea9e945d0ab9483482a86c905649b35baba1ac2f4b8e2e698d2c8\",\"dweb:/ipfs/QmfVrVr45nYkXPP6VL92yfjEQmUWeTCH45MSQD6ZQbY1er\"]},\"/home/friederike/tls-certificates-for-etherum/implementation/contracts/EndorsementStore.sol\":{\"keccak256\":\"0xfa3ad33bd2beef627fdabdb797d657af6d5b6badaa19e3c453629ee554d24ca8\",\"urls\":[\"bzz-raw://3d5205b3b2ea74611bb9daeb338362b2334dc1a3230dd8f743e26f753fda1eee\",\"dweb:/ipfs/QmbcLETBJ897JZyiQb1zSNnqqiQm6MdRgSgujNspGXvw1G\"]},\"/home/friederike/tls-certificates-for-etherum/implementation/contracts/ModexpPrecompile.sol\":{\"keccak256\":\"0x05e160ac0b66f9bacfeeef149e49188d2434df0888b1070ed51ec56758515971\",\"urls\":[\"bzz-raw://71cbc15dc7d97712a1091040254a94f0803e73ac0bfddd8a51801d3dc240be4d\",\"dweb:/ipfs/QmXFcekJK8PVkgHy32nyuYnqiTZKj7RRCfj5LdmCyNr6zn\"]},\"/home/friederike/tls-certificates-for-etherum/implementation/contracts/Owned.sol\":{\"keccak256\":\"0xe067678ee36abec3101d2e01f6a86003b8c4c009f89eaa60697a063053622ea3\",\"urls\":[\"bzz-raw://a18e37a6c7c3726634be23e38841afc72cd555127450a66286925ae3c35ba6d1\",\"dweb:/ipfs/QmeggyJMGgUhRU7ot353oJ22nJN1XJkszhzs9ay3anqDfx\"]},\"/home/friederike/tls-certificates-for-etherum/implementation/contracts/RSAVerify.sol\":{\"keccak256\":\"0xa6c8ac4465742daba49d5e548a5fcdec350c7e39657e03afbfb39ae30583a857\",\"urls\":[\"bzz-raw://2b8b748a4543a96bb864a1ea1acec3a2b7ba4f7b8e0154bad4d2d313733cc459\",\"dweb:/ipfs/QmPeZGmtDWgPWTMmuiPxakVSxXdsVYdzHPL1SbVARgKcMZ\"]},\"/home/friederike/tls-certificates-for-etherum/implementation/contracts/SHA1.sol\":{\"keccak256\":\"0x193768ff5f3161e0779bc5ef19f4b1ded2be301041de14e2b08ec9f09f17b3a1\",\"urls\":[\"bzz-raw://a98d077b120e248e520cdb17f096c0c8d1f49229df8af537f155f86a8d2b3d4b\",\"dweb:/ipfs/QmV2TCxt3xkUDnxWeCAzt1B1Ad5TYwwgkkn6EpYbzTm8CC\"]},\"/home/friederike/tls-certificates-for-etherum/implementation/contracts/SignatureValidation.sol\":{\"keccak256\":\"0x0e37be6a0ca043b89346fa48018792868a6eb7c60579eec7159916726d55c3ab\",\"urls\":[\"bzz-raw://2ddb9ed3808476cb3731d20e953eb1111654b72879f010783948c97551c6e9f6\",\"dweb:/ipfs/QmT9dJ1oGdUkKpNmoXeEviqpbeskF1VqqpxPnc765pDG5w\"]},\"/home/friederike/tls-certificates-for-etherum/implementation/contracts/TimeConversion.sol\":{\"keccak256\":\"0xbdf813688b5fdf60b79aade357945e032dd76933aa899e46af8e790073e13253\",\"urls\":[\"bzz-raw://b5f17ee86f27dba18a78d2147188a562fabb5fca3f6906384089167490577ab1\",\"dweb:/ipfs/QmYEo8d136HXsKNBiKWJoxLBgNmnRa3Tn11hvsfB1pbZDL\"]},\"/home/friederike/tls-certificates-for-etherum/implementation/contracts/Verifier.sol\":{\"keccak256\":\"0x8115a0ed507a4443b5150a58814d6f7f0c15f070530870c7d354e3846f32c8f2\",\"urls\":[\"bzz-raw://ac126db7b361ad496921e2fdbd382243f9d33d192771ad1fd583f8ef2e468967\",\"dweb:/ipfs/QmWYG47qMwWoqxTnkNXAsMNqqA5Woefmz3JWTqyNVSTMqf\"]},\"/home/friederike/tls-certificates-for-etherum/implementation/contracts/X509Certificate.sol\":{\"keccak256\":\"0xf0098400836ec93e1d2a842660bbeed5a292e98ede994d87e83da3e7e1b22cf9\",\"urls\":[\"bzz-raw://5fe4769da3d306a217ffc3fac976401b4004818c3790e87b105bbd682bc0ab89\",\"dweb:/ipfs/QmPeDNBTA2udKawngxWK6NQMGb5GkHEv3Yg92JMbeZa8kn\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516104313803806104318339818101604052604081101561003357600080fd5b810190808051906020019092919080519060200190929190505050336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555081600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555080600281905550505061034a806100e76000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c806393067db41461003b578063f2fde38b14610089575b600080fd5b6100876004803603604081101561005157600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001909291905050506100cd565b005b6100cb6004803603602081101561009f57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101db565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461018f576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252600f8152602001807f4e6f7420617574686f72697a65642e000000000000000000000000000000000081525060200191505060405180910390fd5b81600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550806002819055505050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461029d576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252600f8152602001807f4e6f7420617574686f72697a65642e000000000000000000000000000000000081525060200191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161461031257806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505b5056fea265627a7a72315820b7dc5925d68ae5c2cca7c78385c8a2ff56d2347299aefb132435c92b476a982064736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c806393067db41461003b578063f2fde38b14610089575b600080fd5b6100876004803603604081101561005157600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001909291905050506100cd565b005b6100cb6004803603602081101561009f57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101db565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461018f576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252600f8152602001807f4e6f7420617574686f72697a65642e000000000000000000000000000000000081525060200191505060405180910390fd5b81600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550806002819055505050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461029d576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252600f8152602001807f4e6f7420617574686f72697a65642e000000000000000000000000000000000081525060200191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161461031257806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505b5056fea265627a7a72315820b7dc5925d68ae5c2cca7c78385c8a2ff56d2347299aefb132435c92b476a982064736f6c63430005100032",
+  "sourceMap": "307:878:13:-;;;571:150;8:9:-1;5:2;;;30:1;27;20:12;5:2;571:150:13;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;571:150:13;;;;;;;;;;;;;;;;;;;;;;;;;96:10:8;88:5;;:18;;;;;;;;;;;;;;;;;;664:16:13;639:2;;:42;;;;;;;;;;;;;;;;;;708:9;685:20;:32;;;;571:150;;307:878;;;;;;",
+  "deployedSourceMap": "307:878:13:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;307:878:13;;;;;;;;;;;;;;;;;;;;;;;;1004:179;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1004:179:13;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;195:124:8;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;195:124:8;;;;;;;;;;;;;;;;;;;:::i;:::-;;1004:179:13;158:5:8;;;;;;;;;;;144:19;;:10;:19;;;136:47;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1126:16:13;1101:2;;:42;;;;;;;;;;;;;;;;;;1170:9;1147:20;:32;;;;1004:179;;:::o;195:124:8:-;158:5;;;;;;;;;;;144:19;;:10;:19;;;136:47;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;285:1;265:22;;:8;:22;;;261:53;;301:8;293:5;;:16;;;;;;;;;;;;;;;;;;261:53;195:124;:::o",
+  "source": "pragma solidity ^0.5.12;\n\nimport \"./Owned.sol\";\nimport \"./EndorsementStore.sol\";\n\n/// @title Verifier\n/// @notice Reference implementation of a verifier for a TLS certificate-based authentication framework\n/// @dev Reference implementation of a verifier for a TLS certificate-based authentication framework\ncontract Verifier is Owned {\n\t/// @notice Pointer to the EndorsementDatabase referred to for decisions\n\tEndorsementDatabase es;\n\t/// @notice Index of the trusted root store in EndorsementDatabase which is referred to for decisions\n\tuint256 endorsementRootStore;\n\n\tconstructor (address endorsementStore, uint256 rootStore) public{\n\t\tes = EndorsementDatabase(endorsementStore);\n\t\tendorsementRootStore = rootStore;\n\t}\n\n\t/// @notice Set the EndorsementDatabase contract and index of trusted root store\n\t/// @dev Set the EndorsementDatabase contract and index of trusted root store\n\t/// @param endorsementStore Address of the EndorsementDatabase contract\n\t/// @param rootStore Index of the root store\n\tfunction setEndorsementDatabase(address endorsementStore, uint256 rootStore) public onlyOwner{\n\t\tes = EndorsementDatabase(endorsementStore);\n\t\tendorsementRootStore = rootStore;\n\t}\n}\n",
+  "sourcePath": "/home/friederike/tls-certificates-for-etherum/implementation/contracts/Verifier.sol",
+  "ast": {
+    "absolutePath": "/home/friederike/tls-certificates-for-etherum/implementation/contracts/Verifier.sol",
+    "exportedSymbols": {
+      "Verifier": [
+        4966
+      ]
+    },
+    "id": 4967,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 4919,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:13"
+      },
+      {
+        "absolutePath": "/home/friederike/tls-certificates-for-etherum/implementation/contracts/Owned.sol",
+        "file": "./Owned.sol",
+        "id": 4920,
+        "nodeType": "ImportDirective",
+        "scope": 4967,
+        "sourceUnit": 4380,
+        "src": "26:21:13",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/friederike/tls-certificates-for-etherum/implementation/contracts/EndorsementStore.sol",
+        "file": "./EndorsementStore.sol",
+        "id": 4921,
+        "nodeType": "ImportDirective",
+        "scope": 4967,
+        "sourceUnit": 4018,
+        "src": "48:32:13",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 4922,
+              "name": "Owned",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4379,
+              "src": "328:5:13",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Owned_$4379",
+                "typeString": "contract Owned"
+              }
+            },
+            "id": 4923,
+            "nodeType": "InheritanceSpecifier",
+            "src": "328:5:13"
+          }
+        ],
+        "contractDependencies": [
+          4379
+        ],
+        "contractKind": "contract",
+        "documentation": "@title Verifier\n @notice Reference implementation of a verifier for a TLS certificate-based authentication framework\n @dev Reference implementation of a verifier for a TLS certificate-based authentication framework",
+        "fullyImplemented": true,
+        "id": 4966,
+        "linearizedBaseContracts": [
+          4966,
+          4379
+        ],
+        "name": "Verifier",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 4925,
+            "name": "es",
+            "nodeType": "VariableDeclaration",
+            "scope": 4966,
+            "src": "411:22:13",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_EndorsementDatabase_$4017",
+              "typeString": "contract EndorsementDatabase"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 4924,
+              "name": "EndorsementDatabase",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4017,
+              "src": "411:19:13",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_EndorsementDatabase_$4017",
+                "typeString": "contract EndorsementDatabase"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 4927,
+            "name": "endorsementRootStore",
+            "nodeType": "VariableDeclaration",
+            "scope": 4966,
+            "src": "539:28:13",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 4926,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "539:7:13",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 4944,
+              "nodeType": "Block",
+              "src": "635:86:13",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 4938,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 4934,
+                      "name": "es",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4925,
+                      "src": "639:2:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_EndorsementDatabase_$4017",
+                        "typeString": "contract EndorsementDatabase"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 4936,
+                          "name": "endorsementStore",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 4929,
+                          "src": "664:16:13",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 4935,
+                        "name": "EndorsementDatabase",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4017,
+                        "src": "644:19:13",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_EndorsementDatabase_$4017_$",
+                          "typeString": "type(contract EndorsementDatabase)"
+                        }
+                      },
+                      "id": 4937,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "644:37:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_EndorsementDatabase_$4017",
+                        "typeString": "contract EndorsementDatabase"
+                      }
+                    },
+                    "src": "639:42:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_EndorsementDatabase_$4017",
+                      "typeString": "contract EndorsementDatabase"
+                    }
+                  },
+                  "id": 4939,
+                  "nodeType": "ExpressionStatement",
+                  "src": "639:42:13"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 4942,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 4940,
+                      "name": "endorsementRootStore",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4927,
+                      "src": "685:20:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 4941,
+                      "name": "rootStore",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4931,
+                      "src": "708:9:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "685:32:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 4943,
+                  "nodeType": "ExpressionStatement",
+                  "src": "685:32:13"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 4945,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4932,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4929,
+                  "name": "endorsementStore",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4945,
+                  "src": "584:24:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4928,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "584:7:13",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4931,
+                  "name": "rootStore",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4945,
+                  "src": "610:17:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 4930,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "610:7:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "583:45:13"
+            },
+            "returnParameters": {
+              "id": 4933,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "635:0:13"
+            },
+            "scope": 4966,
+            "src": "571:150:13",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 4964,
+              "nodeType": "Block",
+              "src": "1097:86:13",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 4958,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 4954,
+                      "name": "es",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4925,
+                      "src": "1101:2:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_EndorsementDatabase_$4017",
+                        "typeString": "contract EndorsementDatabase"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 4956,
+                          "name": "endorsementStore",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 4947,
+                          "src": "1126:16:13",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 4955,
+                        "name": "EndorsementDatabase",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4017,
+                        "src": "1106:19:13",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_EndorsementDatabase_$4017_$",
+                          "typeString": "type(contract EndorsementDatabase)"
+                        }
+                      },
+                      "id": 4957,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1106:37:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_EndorsementDatabase_$4017",
+                        "typeString": "contract EndorsementDatabase"
+                      }
+                    },
+                    "src": "1101:42:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_EndorsementDatabase_$4017",
+                      "typeString": "contract EndorsementDatabase"
+                    }
+                  },
+                  "id": 4959,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1101:42:13"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 4962,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 4960,
+                      "name": "endorsementRootStore",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4927,
+                      "src": "1147:20:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 4961,
+                      "name": "rootStore",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4949,
+                      "src": "1170:9:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "1147:32:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 4963,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1147:32:13"
+                }
+              ]
+            },
+            "documentation": "@notice Set the EndorsementDatabase contract and index of trusted root store\n @dev Set the EndorsementDatabase contract and index of trusted root store\n @param endorsementStore Address of the EndorsementDatabase contract\n @param rootStore Index of the root store",
+            "id": 4965,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 4952,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 4951,
+                  "name": "onlyOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 4359,
+                  "src": "1088:9:13",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1088:9:13"
+              }
+            ],
+            "name": "setEndorsementDatabase",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4950,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4947,
+                  "name": "endorsementStore",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4965,
+                  "src": "1036:24:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4946,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1036:7:13",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4949,
+                  "name": "rootStore",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4965,
+                  "src": "1062:17:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 4948,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1062:7:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1035:45:13"
+            },
+            "returnParameters": {
+              "id": 4953,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1097:0:13"
+            },
+            "scope": 4966,
+            "src": "1004:179:13",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 4967,
+        "src": "307:878:13"
+      }
+    ],
+    "src": "0:1186:13"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/friederike/tls-certificates-for-etherum/implementation/contracts/Verifier.sol",
+    "exportedSymbols": {
+      "Verifier": [
+        4966
+      ]
+    },
+    "id": 4967,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 4919,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:13"
+      },
+      {
+        "absolutePath": "/home/friederike/tls-certificates-for-etherum/implementation/contracts/Owned.sol",
+        "file": "./Owned.sol",
+        "id": 4920,
+        "nodeType": "ImportDirective",
+        "scope": 4967,
+        "sourceUnit": 4380,
+        "src": "26:21:13",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/friederike/tls-certificates-for-etherum/implementation/contracts/EndorsementStore.sol",
+        "file": "./EndorsementStore.sol",
+        "id": 4921,
+        "nodeType": "ImportDirective",
+        "scope": 4967,
+        "sourceUnit": 4018,
+        "src": "48:32:13",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 4922,
+              "name": "Owned",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4379,
+              "src": "328:5:13",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Owned_$4379",
+                "typeString": "contract Owned"
+              }
+            },
+            "id": 4923,
+            "nodeType": "InheritanceSpecifier",
+            "src": "328:5:13"
+          }
+        ],
+        "contractDependencies": [
+          4379
+        ],
+        "contractKind": "contract",
+        "documentation": "@title Verifier\n @notice Reference implementation of a verifier for a TLS certificate-based authentication framework\n @dev Reference implementation of a verifier for a TLS certificate-based authentication framework",
+        "fullyImplemented": true,
+        "id": 4966,
+        "linearizedBaseContracts": [
+          4966,
+          4379
+        ],
+        "name": "Verifier",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 4925,
+            "name": "es",
+            "nodeType": "VariableDeclaration",
+            "scope": 4966,
+            "src": "411:22:13",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_EndorsementDatabase_$4017",
+              "typeString": "contract EndorsementDatabase"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 4924,
+              "name": "EndorsementDatabase",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4017,
+              "src": "411:19:13",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_EndorsementDatabase_$4017",
+                "typeString": "contract EndorsementDatabase"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 4927,
+            "name": "endorsementRootStore",
+            "nodeType": "VariableDeclaration",
+            "scope": 4966,
+            "src": "539:28:13",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 4926,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "539:7:13",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 4944,
+              "nodeType": "Block",
+              "src": "635:86:13",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 4938,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 4934,
+                      "name": "es",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4925,
+                      "src": "639:2:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_EndorsementDatabase_$4017",
+                        "typeString": "contract EndorsementDatabase"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 4936,
+                          "name": "endorsementStore",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 4929,
+                          "src": "664:16:13",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 4935,
+                        "name": "EndorsementDatabase",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4017,
+                        "src": "644:19:13",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_EndorsementDatabase_$4017_$",
+                          "typeString": "type(contract EndorsementDatabase)"
+                        }
+                      },
+                      "id": 4937,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "644:37:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_EndorsementDatabase_$4017",
+                        "typeString": "contract EndorsementDatabase"
+                      }
+                    },
+                    "src": "639:42:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_EndorsementDatabase_$4017",
+                      "typeString": "contract EndorsementDatabase"
+                    }
+                  },
+                  "id": 4939,
+                  "nodeType": "ExpressionStatement",
+                  "src": "639:42:13"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 4942,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 4940,
+                      "name": "endorsementRootStore",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4927,
+                      "src": "685:20:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 4941,
+                      "name": "rootStore",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4931,
+                      "src": "708:9:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "685:32:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 4943,
+                  "nodeType": "ExpressionStatement",
+                  "src": "685:32:13"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 4945,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4932,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4929,
+                  "name": "endorsementStore",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4945,
+                  "src": "584:24:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4928,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "584:7:13",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4931,
+                  "name": "rootStore",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4945,
+                  "src": "610:17:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 4930,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "610:7:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "583:45:13"
+            },
+            "returnParameters": {
+              "id": 4933,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "635:0:13"
+            },
+            "scope": 4966,
+            "src": "571:150:13",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 4964,
+              "nodeType": "Block",
+              "src": "1097:86:13",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 4958,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 4954,
+                      "name": "es",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4925,
+                      "src": "1101:2:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_EndorsementDatabase_$4017",
+                        "typeString": "contract EndorsementDatabase"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 4956,
+                          "name": "endorsementStore",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 4947,
+                          "src": "1126:16:13",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 4955,
+                        "name": "EndorsementDatabase",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4017,
+                        "src": "1106:19:13",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_EndorsementDatabase_$4017_$",
+                          "typeString": "type(contract EndorsementDatabase)"
+                        }
+                      },
+                      "id": 4957,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1106:37:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_EndorsementDatabase_$4017",
+                        "typeString": "contract EndorsementDatabase"
+                      }
+                    },
+                    "src": "1101:42:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_EndorsementDatabase_$4017",
+                      "typeString": "contract EndorsementDatabase"
+                    }
+                  },
+                  "id": 4959,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1101:42:13"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 4962,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 4960,
+                      "name": "endorsementRootStore",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4927,
+                      "src": "1147:20:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 4961,
+                      "name": "rootStore",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4949,
+                      "src": "1170:9:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "1147:32:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 4963,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1147:32:13"
+                }
+              ]
+            },
+            "documentation": "@notice Set the EndorsementDatabase contract and index of trusted root store\n @dev Set the EndorsementDatabase contract and index of trusted root store\n @param endorsementStore Address of the EndorsementDatabase contract\n @param rootStore Index of the root store",
+            "id": 4965,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 4952,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 4951,
+                  "name": "onlyOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 4359,
+                  "src": "1088:9:13",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1088:9:13"
+              }
+            ],
+            "name": "setEndorsementDatabase",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4950,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4947,
+                  "name": "endorsementStore",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4965,
+                  "src": "1036:24:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4946,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1036:7:13",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4949,
+                  "name": "rootStore",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4965,
+                  "src": "1062:17:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 4948,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1062:7:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1035:45:13"
+            },
+            "returnParameters": {
+              "id": 4953,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1097:0:13"
+            },
+            "scope": 4966,
+            "src": "1004:179:13",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 4967,
+        "src": "307:878:13"
+      }
+    ],
+    "src": "0:1186:13"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "1589549827918": {
+      "events": {},
+      "links": {},
+      "address": "0xb35BBbAbAC6eC5f9C91aE635A9e5E2BA4ba31301",
+      "transactionHash": "0x0ec5f830f1db21c1e50bf50547e115d9e943c00f56d8169f2cf701a273ca1da3"
+    },
+    "1590136517517": {
+      "events": {},
+      "links": {},
+      "address": "0xD833215cBcc3f914bD1C9ece3EE7BF8B14f841bb",
+      "transactionHash": "0x5ccb55c8a4d68a7edf5bd6c2a96a6ca3ff3d38f047719c837998011bc593b374"
+    }
+  },
+  "schemaVersion": "3.0.22",
+  "updatedAt": "2020-05-24T18:20:54.881Z",
+  "devdoc": {
+    "details": "Reference implementation of a verifier for a TLS certificate-based authentication framework",
+    "methods": {
+      "setEndorsementDatabase(address,uint256)": {
+        "details": "Set the EndorsementDatabase contract and index of trusted root store",
+        "params": {
+          "endorsementStore": "Address of the EndorsementDatabase contract",
+          "rootStore": "Index of the root store"
+        }
+      }
+    },
+    "title": "Verifier"
+  },
+  "userdoc": {
+    "methods": {
+      "setEndorsementDatabase(address,uint256)": {
+        "notice": "Set the EndorsementDatabase contract and index of trusted root store"
+      }
+    },
+    "notice": "Reference implementation of a verifier for a TLS certificate-based authentication framework"
+  }
+}
